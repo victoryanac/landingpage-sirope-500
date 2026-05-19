@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirope de Savia 500 ml | El Arte de la Pausa</title>
+    <meta name="description"
+        content="Protocolo de 5 días de ayuno protegido con Sirope de Savia. Recupera tu claridad mental y devuelve la ligereza original a tu cuerpo con nuestro acompañamiento experto.">
+
+    <!-- Marcador invisible para la analítica (Google Analytics / Pixel) -->
+    <script>
+        // [ANALYTICS_MARKER]
+    </script>
+
+    <!-- Fuentes Modernas: Outfit para Títulos (Elegancia Científica) e Inter para Cuerpo (Lectura Limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           VARIABLES Y RESET
+           ========================================================================== */
+        :root {
+            --color-bg: #F5F5F5;
+            --color-primary: #2F6369;
+            --color-text: #222222;
+            --color-accent: #f3c301;
+            --color-white: #ffffff;
+            --font-headings: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ==========================================================================
+           UTILIDADES Y COMPONENTES
+           ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .title-font {
+            font-family: var(--font-headings);
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-text);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(243, 195, 1, 0.3);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(243, 195, 1, 0.4);
+        }
+
+        /* Marcadores visuales de posición */
+        .placeholder-box {
+            background-color: rgba(47, 99, 105, 0.05);
+            border: 1px dashed rgba(47, 99, 105, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(47, 99, 105, 0.6);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* ==========================================================================
+           SECCIONES ESPECÍFICAS
+           ========================================================================== */
+
+        /* Cintillo Superior */
+        .top-banner {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            text-align: center;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        /* Header / Navegación Limpia */
+        .header {
+            padding: 2rem 0;
+            position: absolute;
+            width: 100%;
+            top: auto;
+            z-index: 10;
+        }
+
+        .logo-placeholder {
+            font-family: var(--font-headings);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: 1px;
+        }
+
+        /* Bloque 1: Hero Section */
+        .hero {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--color-text);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 600px;
+        }
+
+        /* Bloque 2: La Ciencia */
+        .science-section {
+            background-color: var(--color-white);
+            border-top: 1px solid rgba(47, 99, 105, 0.1);
+            border-bottom: 1px solid rgba(47, 99, 105, 0.1);
+        }
+
+        .science-text {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            font-family: var(--font-headings);
+            font-weight: 300;
+            color: var(--color-primary);
+        }
+
+        .science-text strong {
+            font-weight: 600;
+        }
+
+        /* Bloque 3: Diagrama Zen Interactivo */
+        .zen-section {
+            background-color: var(--color-bg);
+            overflow: hidden;
+        }
+
+        .zen-diagram-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .zen-diagram-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            border-left: 2px dashed rgba(47, 99, 105, 0.3);
+            z-index: 0;
+        }
+
+        @media (min-width: 992px) {
+            .zen-diagram-container {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+
+            .zen-diagram-container::before {
+                top: 55px;
+                bottom: auto;
+                left: 10%;
+                right: 10%;
+                width: 80%;
+                height: 2px;
+                border-left: none;
+                border-top: 2px dashed rgba(47, 99, 105, 0.3);
+                transform: none;
+            }
+        }
+
+        .zen-card {
+            background: var(--color-white);
+            border-radius: 40px;
+            /* Aspecto mucho más redondeado y orgánico */
+            width: 100%;
+            max-width: 340px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 15px 40px rgba(47, 99, 105, 0.08);
+            /* Sombra suave y flotante */
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid rgba(47, 99, 105, 0.05);
+            overflow: hidden;
+            /* Mantiene la redondez */
+        }
+
+        .zen-card:hover,
+        .zen-card:focus-within {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(47, 99, 105, 0.15);
+            border-color: rgba(47, 99, 105, 0.1);
+        }
+
+        .zen-card.ayuno {
+            max-width: 380px;
+            box-shadow: 0 15px 40px rgba(213, 182, 70, 0.15);
+        }
+
+        .zen-card.ayuno:hover,
+        .zen-card.ayuno:focus-within {
+            box-shadow: 0 25px 50px rgba(213, 182, 70, 0.25);
+        }
+
+        .zen-card-header {
+            padding: 2.5rem 1.5rem 1.5rem;
+            /* Más aire en la parte superior */
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background: transparent;
+            /* Elimina los bloques cuadrados de color */
+        }
+
+        .zen-card.pre-ayuno .zen-card-header h3,
+        .zen-card.post-ayuno .zen-card-header h3 {
+            color: #0A6167;
+        }
+
+        .zen-card.ayuno .zen-card-header h3 {
+            color: #D5B646;
+        }
+
+        .zen-card-header h3 {
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .zen-card-header p {
+            color: #555;
+            /* Texto oscuro para contrastar con fondo blanco */
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .zen-card-body {
+            max-height: 0;
+            opacity: 0;
+            padding: 0 2rem;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--color-white);
+        }
+
+        .zen-card:hover .zen-card-body,
+        .zen-card:focus-within .zen-card-body {
+            max-height: 300px;
+            opacity: 1;
+            padding: 0 2rem 2.5rem;
+        }
+
+        .zen-card-body p {
+            font-size: 0.95rem;
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .pilar-card:hover {
+            opacity: 1 !important;
+            box-shadow: 0 10px 25px rgba(47, 99, 105, 0.1) !important;
+            transform: translateY(-5px);
+        }
+
+        .zen-card-image {
+            background: var(--color-white);
+            padding: 0 1.5rem 1.5rem;
+            /* Menos padding superior porque el header lo tiene */
+            text-align: center;
+        }
+
+        .icon-img-zen {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 6px solid #F5F5F5;
+            /* Efecto de enmarcado limpio */
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .zen-card:hover .icon-img-zen,
+        .zen-card:focus-within .icon-img-zen {
+            transform: scale(1.08) translateY(-5px);
+        }
+
+        .bottle-img-zen {
+            max-width: 140px;
+            height: auto;
+            margin: 0 auto;
+            filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+            transition: transform 0.4s ease;
+        }
+
+        .zen-card.ayuno:hover .bottle-img-zen,
+        .zen-card.ayuno:focus-within .bottle-img-zen {
+            transform: scale(1.08) translateY(-5px);
+        }
+
+        /* Bloque 4: ¿Por qué 5 días? (Tarjetas) */
+        .days-section {
+            background-color: var(--color-white);
+        }
+
+        .section-header {
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .day-card {
+            background: var(--color-white);
+            border: 1px solid rgba(47, 99, 105, 0.08);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            transition: var(--transition);
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+            border-color: rgba(47, 99, 105, 0.2);
+        }
+
+        .card-number {
+            font-family: var(--font-headings);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            opacity: 0.15;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .day-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        .day-card p {
+            font-weight: 300;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Bloque 5: El Protocolo (Ritual Diario) */
+        .protocol-section {
+            background-color: var(--color-bg);
+        }
+
+        .protocol-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .step-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-headings);
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 24px;
+            width: 2px;
+            height: calc(100% + 1rem);
+            background-color: rgba(47, 99, 105, 0.15);
+            z-index: 1;
+        }
+
+        .step-content {
+            padding-top: 0.5rem;
+        }
+
+        .step-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .step-content p {
+            color: #444;
+            font-weight: 300;
+        }
+
+        /* Bloque 6: Sostén Humano / Oferta */
+        .support-section {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-radius: 24px;
+            margin: 4rem auto 6rem;
+            max-width: 1200px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(47, 99, 105, 0.2);
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .support-content {
+            padding: 5rem 4rem;
+        }
+
+        .support-content h2 {
+            color: var(--color-white);
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-tag {
+            font-family: var(--font-headings);
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .support-text {
+            font-weight: 300;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .disclaimer {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-bottom: 3rem;
+            font-style: italic;
+            border-left: 2px solid var(--color-accent);
+            padding-left: 1rem;
+        }
+
+        .timeline {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .timeline-date {
+            font-family: var(--font-headings);
+            color: var(--color-accent);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .support-image {
+            background-color: #244e53;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        /* Footer Simple */
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* ==========================================================================
+           RESPONSIVE (MOBILE FIRST APPROACH - OVERRIDES FOR DESKTOP)
+           ========================================================================== */
+        @media (max-width: 991px) {
+            .hero {
+                padding-top: 8rem;
+                min-height: auto;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-image {
+                height: 400px;
+                order: -1;
+            }
+
+            .science-text {
+                font-size: 1.25rem;
+                text-align: center;
+            }
+
+
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .support-content {
+                padding: 3rem 2rem;
+            }
+
+            .support-section {
+                margin: 2rem 1rem 4rem;
+                border-radius: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cintillo sutil superior -->
+    <div class="top-banner">
+        Una invitación consciente para Junio 2026. Cupos limitados para el acompañamiento en vivo.
+    </div>
+
+    <!-- Header Limpio -->
+    <header class="header">
+        <div class="container">
+            <!-- Marcador Logo -->
+            <div class="logo-placeholder">
+                <img src="assets/Logo-Simaios.png" alt="Logo Simaios"
+                    style="height: 45px; width: auto; display: block;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Bloque 1: El Arte de la Pausa (Hero Section) -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Devuélvele la ligereza original a tu cuerpo.</h1>
+                    <p>El nuevo formato de 500 ml nace como una invitación simplificada: un protocolo de 5 días de ayuno
+                        protegido, diseñado para liberar la carga metabólica y recuperar tu claridad mental, sintiéndote
+                        sostenido y seguro en cada paso.</p>
+                    <a href="https://tienda.siropedesavia.cl" class="btn-primary">Iniciar mi proceso de 5 días</a>
+                </div>
+                <div class="hero-image" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/hero_natural.png" alt="Sirope de Savia Entorno Natural"
+                        style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 2: La Ciencia del Ayuno Protegido -->
+    <section class="science-section section-padding text-center">
+        <div class="container">
+            <p class="science-text">
+                "El ayuno consciente no es privación; <strong>es una decisión biológica</strong>. Al pausar la digestión
+                pesada, tu cuerpo redirige esa energía a la renovación celular (autofagia). El Sirope de Savia entrega
+                los oligoelementos y la energía sutil necesaria para que tu cerebro funcione en perfecta calma,
+                protegiendo tu musculatura y eliminando la ansiedad del ayuno tradicional."
+            </p>
+        </div>
+    </section>
+
+    <!-- Recomendación Médica (Video) -->
+    <section class="video-section section-padding"
+        style="background-color: var(--color-white); border-bottom: 1px solid rgba(47, 99, 105, 0.1);">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>Respaldo Clínico</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-top: 0.5rem;">El Dr. Rodrigo Alcázar recomienda el
+                    Sirope de Savia para ayunos protegidos.</p>
+            </div>
+            <div
+                style="max-width: 640px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://www.youtube.com/embed/Y6CQsvpaoJA" title="Recomendación Dr. Rodrigo Alcázar"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 3: Diagrama Zen Interactivo -->
+    <section class="zen-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>¿Cómo es el ayuno con Sirope de Savia?</h2>
+            </div>
+
+            <div class="zen-diagram-container">
+                <!-- Pre-Ayuno -->
+                <div class="zen-card pre-ayuno" tabindex="0">
+                    <div class="zen-card-header">
+                        <h3>3 DÍAS</h3>
+                        <p>Pre - Ayuno</p>
+                        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.3rem;">▾ Toca para ver detalle</p>
+                    </div>
+                    <div class="zen-card-image">
+                        <img src="assets/pre_ayuno.png" alt="Jugos Pre-Ayuno" class="icon-img-zen" loading="lazy">
+                    </div>
+                    <div class="zen-card-body">
+                        <p>Se consumen frutas y verduras en jugos y sopas. Haciendo una transición de sólidos a líquidos
+                            en estos 3 días.</p>
+                    </div>
+                </div>
+
+                <!-- Ayuno -->
+                <div class="zen-card ayuno" tabindex="0">
+                    <div class="zen-card-header">
+                        <h3>5 DÍAS</h3>
+                        <p>Ayuno con Sirope de Savia</p>
+                        <p style="font-size: 0.85rem; font-weight: 300; margin-top: 0.2rem;">(Jarabe de Arce y Palma)
+                        </p>
+                        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.3rem;">▾ Toca para ver detalle</p>
+                    </div>
+                    <div class="zen-card-image">
+
+                        <source srcset="assets/sirope1-500.webp" type="image/webp">
+                        <img src="/assets/sirope2-500-sf.png" alt="Sirope de Savia 500ml Premium" class="bottle-img-zen"
+                            loading="lazy">
+
+                    </div>
+                    <div class="zen-card-body">
+                        <p>Se consume la mezcla de Sirope de Savia, junto a las infusiones y homeopatía recomendada.</p>
+                    </div>
+                </div>
+
+                <!-- Post-Ayuno -->
+                <div class="zen-card post-ayuno" tabindex="0">
+                    <div class="zen-card-header">
+                        <h3>3 DÍAS</h3>
+                        <p>Post - Ayuno</p>
+                        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.3rem;">▾ Toca para ver detalle</p>
+                    </div>
+                    <div class="zen-card-image">
+                        <img src="assets/post_ayuno.png" alt="Transición Post-Ayuno" class="icon-img-zen"
+                            loading="lazy">
+                    </div>
+                    <div class="zen-card-body">
+                        <p>Se consumen frutas y verduras en jugos y sopas. Haciendo una transición de líquidos a sólidos
+                            en estos 3 días.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 4: ¿Por qué el viaje dura exactamente 5 días? -->
+    <section class="days-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>¿Por qué el viaje dura exactamente 5 días?</h2>
+            </div>
+
+            <div class="cards-grid">
+                <div class="day-card">
+                    <div class="card-number">1-2</div>
+                    <h3>La Transición</h3>
+                    <p>El cuerpo agota pacientemente sus reservas de glucógeno y se prepara biológicamente para el
+                        cambio natural de combustible energético.</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-number">3-4</div>
+                    <h3>La Renovación Celular</h3>
+                    <p>Se activa la autofagia profunda. Tus células se limpian a sí mismas, devolviéndote la vitalidad
+                        latente y la ligereza física.</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-number">05</div>
+                    <h3>La Claridad</h3>
+                    <p>Consolidación de la flexibilidad metabólica. Te despiertas con un cuerpo desinflamado, ligero y
+                        una mente agudamente enfocada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 5: El Protocolo: Cómo funciona tu ritual diario -->
+    <section class="protocol-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>El Protocolo: tu ritual diario</h2>
+            </div>
+
+            <div class="protocol-wrapper">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>La Preparación Consecuente</h3>
+                        <p>Mezclamos el Sirope de Savia con agua pura, jugo de limón fresco y una pizca de
+                            pimienta de cayena. El tamaño de 500 ml está milimétricamente calculado para cubrir la dosis
+                            exacta de este reset corto.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>El Sustento Diario</h3>
+                        <p>Durante los 5 días, reemplazas las comidas sólidas por las tomas de este elíxir botánico cada
+                            vez que sientas la necesidad. Tu cuerpo recibe energía limpia de asimilación inmediata.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>El Silencio Digestivo</h3>
+                        <p>Tu sistema digestivo entra en un descanso profundo. No gastas energía procesando químicos ni
+                            alimentos pesados; tu biología se dedica exclusivamente a reparar y sanar.</p>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Pilares de Renovación Integral -->
+    <section class="pilares-section section-padding" style="background-color: #F5F5F5;">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Los pilares de tu renovación integral.</h2>
+                <p style="font-size: 1.15rem; color: #222222; margin-top: 0.5rem; font-weight: 300;">Lo que experimenta
+                    tu biología cuando decides regalarle una pausa consciente a tu diseño original.</p>
+            </div>
+            <div class="pilares-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+
+                <div class="pilar-card"
+                    style="background: var(--color-white); border: 1px solid var(--color-primary); border-radius: 12px; padding: 2rem; transition: var(--transition); opacity: 0.75;">
+                    <div style="font-size: 2rem; color: #222222; margin-bottom: 1rem;">🌿</div>
+                    <h3 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 1rem;">Silencio Digestivo
+                        Profundo</h3>
+                    <p style="font-size: 0.95rem; font-weight: 300; color: #555;">Al pausar los procesos de digestión
+                        pesada de alimentos procesados, tu cuerpo redirige toda esa energía estancada hacia la
+                        reparación y desinflamación de tus órganos vitales. Volverás a sentir lo que es la verdadera
+                        ligereza.</p>
+                </div>
+
+                <div class="pilar-card"
+                    style="background: var(--color-white); border: 1px solid var(--color-primary); border-radius: 12px; padding: 2rem; transition: var(--transition); opacity: 0.75;">
+                    <div style="font-size: 2rem; color: #222222; margin-bottom: 1rem;">🔄</div>
+                    <h3 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 1rem;">Activación de la
+                        Autofagia Celular</h3>
+                    <p style="font-size: 0.95rem; font-weight: 300; color: #555;">Durante los 5 días centrales del
+                        ritual, tus células entran en un estado de reciclaje biológico profundo (autofagia). Eliminan
+                        componentes dañados y toxinas metabólicas acumuladas, renovando tu energía desde el origen.</p>
+                </div>
+
+                <div class="pilar-card"
+                    style="background: var(--color-white); border: 1px solid var(--color-primary); border-radius: 12px; padding: 2rem; transition: var(--transition); opacity: 0.75;">
+                    <div style="font-size: 2rem; color: #222222; margin-bottom: 1rem;">🧘</div>
+                    <h3 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 1rem;">Claridad Mental y
+                        Enfoque Zen</h3>
+                    <p style="font-size: 0.95rem; font-weight: 300; color: #555;">Libre de las fluctuaciones de azúcar y
+                        de la pesadez estomacal, tu cerebro experimenta una profunda calma neurobiológica. Te
+                        despertarás cada mañana con una mente enfocada, nítida y libre de la niebla mental cotidiana.
+                    </p>
+                </div>
+
+                <div class="pilar-card"
+                    style="background: var(--color-white); border: 1px solid var(--color-primary); border-radius: 12px; padding: 2rem; transition: var(--transition); opacity: 0.75;">
+                    <div style="font-size: 2rem; color: #222222; margin-bottom: 1rem;">🛡️</div>
+                    <h3 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 1rem;">Flexibilidad
+                        Metabólica Protegida</h3>
+                    <p style="font-size: 0.95rem; font-weight: 300; color: #555;">A diferencia de los ayunos agresivos
+                        que debilitan, los oligoelementos y nutrientes naturales del Sirope de Savia sostienen tu
+                        energía sutil, protegiendo tu masa muscular y manteniendo a raya la ansiedad del hambre
+                        tradicional.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Recomendación Nutricional (Video) -->
+    <section class="video-section section-padding" style="background-color: var(--color-white);">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>Visión de los Expertos</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-top: 0.5rem;">La Nutricionista Maria Belen Urtubey nos
+                    explica los beneficios metabólicos del ayuno con Sirope de Savia.</p>
+            </div>
+            <div
+                style="max-width: 640px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://www.youtube.com/embed/XsHwRMwdDJc"
+                    title="Beneficios del Ayuno - Nutricionista"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 6: El Sostén Humano (La Oferta de $48.000) -->
+    <section class="support-section">
+        <div class="support-grid">
+            <div class="support-content">
+                <h2>El Sostén Humano</h2>
+                <span class="price-tag">Inversión: $48.000</span>
+
+                <p class="support-text">
+                    Tu decisión de regalarte este reset incluye un espacio de cuidado colectivo. No harás este camino a
+                    solas. Durante las fechas críticas de junio, caminarás de la mano de nuestra psicoterapeuta (para
+                    acunar la ansiedad) y nuestro nutricionista clínico (para guiar tu biología).
+                </p>
+
+                <p class="disclaimer">
+                    *Este reto se realizará en grupo y será guiado por nuestros profesionales. Las sesiones son un
+                    espacio de apoyo colectivo, no corresponden a consultas médicas privadas.
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">3 o 4 de Junio</div>
+                        <div class="timeline-desc">Cierre consciente de inscripciones. Garantizamos que la botánica
+                            llegue a tu hogar en cualquier región de Chile a tiempo.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">8, 11 y 16 de Junio</div>
+                        <div class="timeline-desc">Encuentros en vivo por Zoom: sesiones de preparación, guía y regreso
+                            consciente a los alimentos sólidos.</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="https://tienda.siropedesavia.cl" class="btn-primary"
+                        style="background-color: var(--color-white); color: var(--color-primary);">Asegurar mi cupo</a>
+                </div>
+            </div>
+
+            <div class="support-image"
+                style="background-image: url('assets/soporte.png'); background-size: cover; background-position: center; border:none; border-radius:0; min-height: 400px;">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sirope de Savia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
