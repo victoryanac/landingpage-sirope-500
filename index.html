@@ -810,6 +810,151 @@
             margin-bottom: 1rem;
             line-height: 1.5;
         }
+
+        /* Testimonios Premium */
+        .testimonials-section {
+            background-color: var(--color-white);
+            border-top: 1px solid rgba(47, 99, 105, 0.1);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--color-bg);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 30px rgba(47, 99, 105, 0.03);
+            border: 1px solid rgba(47, 99, 105, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(47, 99, 105, 0.08);
+            border-color: rgba(47, 99, 105, 0.15);
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--color-text);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--color-primary);
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.1rem;
+        }
+
+        .testimonial-info p {
+            font-size: 0.8rem;
+            color: #777;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        /* FAQ Acordeón Minimalista */
+        .faq-section {
+            background-color: var(--color-bg);
+            border-top: 1px solid rgba(47, 99, 105, 0.1);
+        }
+
+        .faq-wrapper {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background-color: var(--color-white);
+            border: 1px solid rgba(47, 99, 105, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: var(--font-headings);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0 2rem;
+        }
+
+        .faq-answer p {
+            font-size: 0.95rem;
+            color: #555;
+            padding-bottom: 1.5rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 350px;
+        }
+
+        @media (max-width: 991px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -1092,6 +1237,59 @@
         </div>
     </section>
 
+    <!-- Testimonios de Experiencias Reales -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Experiencias y Respaldo de Quienes ya Vivieron el Reset</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-top: 0.5rem;">Médicos, figuras públicas y personas reales confirman la diferencia del Ayuno Protegido.</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonio 1: Dr. Rodolfo Neira -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "La detoxificación con Sirope de Savia (Madal Bal) reduce la ingesta calórica y de macromoléculas, manteniendo bajos los niveles de insulina, lo que favorece la reparación corporal y la activación de sistemas detoxificadores. Proporciona nutrientes esenciales, asegurando un estado nutricional óptimo para el proceso detoxificante."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn.jsdelivr.net/gh/victoryanac/landingpage-sirope-500@main/simaios-landing/assets/img/testimonial/Rodolfo Neira.png" alt="Dr. Rodolfo Neira" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <h4>Dr. Rodolfo Neira</h4>
+                            <p>Médico Clínico</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2: Amaro Gómez-Pablos -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "La sensación es extraordinaria, he podido conciliar la limpieza de todo mi cuerpo con la pérdida de unos 5 o más kilos, y estoy contento porque hice el ayuno de una manera protegida (con el sirope de savia), recibiendo todos los nutrientes que mi cuerpo necesita."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn.jsdelivr.net/gh/victoryanac/landingpage-sirope-500@main/simaios-landing/assets/img/testimonial/Amaro Gómez-Pablos.png" alt="Amaro Gómez-Pablos" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <h4>Amaro Gómez-Pablos</h4>
+                            <p>Periodista y Presentador de TV</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3: Solange Lackington -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Sin duda, la sensación que más sorprende es cómo rápidamente el cuerpo afloja y se duerme tan bien que al día siguiente despiertas con mucha más energía y vitalidad."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn.jsdelivr.net/gh/victoryanac/landingpage-sirope-500@main/simaios-landing/assets/img/testimonial/Solange Lackington 2.png" alt="Solange Lackington" class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-info">
+                            <h4>Solange Lackington</h4>
+                            <p>Actriz Chilena</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bloque 6: El Sostén Humano (La Oferta de $48.000) -->
     <section class="support-section">
         <div class="support-grid">
@@ -1135,6 +1333,55 @@
         </div>
     </section>
 
+    <!-- FAQ (Preguntas Frecuentes) -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Preguntas Frecuentes</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-top: 0.5rem;">Resolvemos tus dudas para que inicies tu reset con total confianza.</p>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <button class="faq-question">¿Por qué la botella de 500 ml es la dosis exacta?</button>
+                    <div class="faq-answer">
+                        <p>La botella de 500 ml contiene la dosis perfecta para cubrir las tomas diarias del protocolo express de 5 días. Cada día utilizarás exactamente 100 ml de Sirope de Savia diluidos en 1.8 litros de agua purificada, 100 ml de jugo de limón y una pizca de pimienta de cayena. De esta forma logras un reset metabólico completo sin desperdiciar ni una sola gota de producto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Voy a pasar hambre extrema o debilidad durante el reto?</button>
+                    <div class="faq-answer">
+                        <p>No. A diferencia del ayuno de agua tradicional, el Sirope de Savia Madal Bal® aporta carbohidratos simples de rápida absorción (29 g por porción, equivalente a 116 kcal). Esto suministra glucosa de forma constante a tu cerebro, manteniendo la energía y la claridad mental, y previniendo caídas bruscas de azúcar en la sangre (mareos o debilidad).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿El ayuno daña o descompone mi masa muscular?</button>
+                    <div class="faq-answer">
+                        <p>No, porque el Sirope de Savia proporciona nutrientes y calorías mínimas que protegen las fibras musculares. Al aportar energía celular y electrolitos esenciales (calcio, sodio, potasio), tu cuerpo puede concentrarse en la autofagia (reciclaje celular de toxinas) y en quemar grasa acumulada como combustible sin necesidad de degradar tejido muscular.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuál es el valor diferencial del Sirope de Savia Madal Bal®?</button>
+                    <div class="faq-answer">
+                        <p>Nuestro Sirope combina dos tipos de savia 100% puras: la savia de arce de Canadá Categoría C (la última en extraerse, que destaca por tener menos azúcares y concentrar una mayor cantidad de calcio, magnesio, hierro y manganeso) y la savia de palmera tropical de Indonesia (que aporta sodio y potasio). Juntas suministran los minerales esenciales para sostener el organismo durante el silencio digestivo, algo que no logran los jarabes comerciales comunes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo se realiza el acompañamiento profesional grupal?</button>
+                    <div class="faq-answer">
+                        <p>No harás este camino a solas. Al comprar tu kit, ingresas a un grupo privado de WhatsApp donde recibirás asistencia diaria. Además, tendremos 3 encuentros estratégicos en vivo por Zoom (14, 17 y 22 de Julio) dirigidos por nuestro psicólogo (para ayudarte a gestionar la ansiedad mental del hambre) y nuestro nutricionista clínico (para guiar el pre-ayuno y el regreso seguro a los alimentos sólidos).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Sirope de Savia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
             <!-- Modal de Calificación (Quiz de Seguridad) -->
             <div id="security-quiz-modal" class="modal">
                 <div class="modal-content">
@@ -1157,15 +1404,23 @@
                             <label for="opt-tca">¿Tienes historial o diagnóstico de trastornos de la conducta alimentaria (TCA)?</label>
                         </div>
                         <div class="quiz-option">
+                            <input type="checkbox" id="opt-meds" class="quiz-check">
+                            <label for="opt-meds">¿Tomas medicamentos de forma regular o estás bajo tratamiento médico crónico (depresión, tiroides, etc.)?</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="checkbox" id="opt-weight" class="quiz-check">
+                            <label for="opt-weight">¿Tienes bajo peso (IMC < 18.5) o padeces condiciones como Hipertiroidismo, SIBO o Candidiasis?</label>
+                        </div>
+                        <div class="quiz-option">
                             <input type="checkbox" id="opt-age" class="quiz-check">
                             <label for="opt-age">¿Eres menor de 18 años?</label>
                         </div>
 
                         <div id="quiz-result-danger" class="result-box">
-                            <h4>⚠️ Protocolo adaptado requerido</h4>
-                            <p>Vemos que presentas condiciones que requieren un cuidado especial. ¡No te preocupes! Puedes realizar una versión adaptada (como el Medio Ayuno o Ayuno Intermitente Protegido). Tu compra incluye la botella de 500 ml y la asesoría de nuestro nutricionista dentro del grupo para ajustar el plan a tu medida.</p>
-                            <a href="https://tienda.siropedesavia.cl/cart/add/35345313" class="btn-primary" style="text-align: center; width: 100%; margin-bottom: 1rem;">Proceder al Pago ($48.000)</a>
-                            <a href="https://wa.me/56964260153?text=Hola,%20tengo%20dudas%20sobre%20mi%20aptitud%20para%20el%20reto" style="display: block; text-align: center; color: var(--color-primary); font-size: 0.9rem; font-weight: 500;">Tengo dudas, prefiero hablar con un asesor primero</a>
+                            <h4>⚠️ Requiere Plan Adaptado de Asesoría Médica</h4>
+                            <p>Dado que presentas una o más de las condiciones marcadas, realizar el ayuno prolongado general no es recomendable sin supervisión. ¡Pero no te preocupes! Puedes optar a una alternativa segura como el <strong>Medio Ayuno Protegido</strong> o el <strong>Ayuno Intermitente Protegido</strong>. Esto debe ser evaluado y estructurado a tu medida por nuestro nutricionista clínico.</p>
+                            <a href="https://wa.me/56964260153?text=Hola!%20Realicé%20el%20quiz%20de%20aptitud%20y%20tengo%20condiciones%20especiales.%20Quiero%20evaluar%20un%20Medio%20Ayuno%20Protegido%20con%20el%20nutricionista." class="btn-primary" style="text-align: center; width: 100%; margin-bottom: 1rem; display: block; background-color: var(--color-primary); color: var(--color-white);">Contactar al Nutricionista por WhatsApp</a>
+                            <a href="https://tienda.siropedesavia.cl/cart/add/35345313" style="display: block; text-align: center; color: #777; font-size: 0.85rem; text-decoration: underline;">Prefiero adquirir el pack de 500 ml y asesorarme dentro del grupo</a>
                         </div>
 
                         <div id="quiz-result-success" class="result-box">
@@ -1241,6 +1496,19 @@
                         } else {
                             successResult.classList.add('success');
                         }
+                    });
+
+                    // FAQ Accordion
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    faqItems.forEach(item => {
+                        const question = item.querySelector('.faq-question');
+                        question.addEventListener('click', function() {
+                            const isActive = item.classList.contains('active');
+                            faqItems.forEach(i => i.classList.remove('active'));
+                            if (!isActive) {
+                                item.classList.add('active');
+                            }
+                        });
                     });
                 });
             </script>
