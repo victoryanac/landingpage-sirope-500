@@ -5,6 +5,59 @@
 /* --- GENERAL & TIPOGRAFÍA --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
 
+/* --- CUSTOM FLEXBOX GRID SYSTEM (INDEPENDIENTE DEL TEMA) --- */
+.launch-hero .row,
+.launch-comparison .row,
+.launch-timeline .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  box-sizing: border-box !important;
+}
+
+.launch-hero .row {
+  align-items: center !important;
+}
+
+.launch-comparison .row {
+  align-items: center !important;
+}
+
+/* Columnas de Hero (2 columnas de 50%) */
+.launch-hero .col-lg-6 {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
+/* Columnas de Comparación (41.6% y 58.3%) */
+.launch-comparison .col-lg-5 {
+  flex: 0 0 41.666667% !important;
+  max-width: 41.666667% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+.launch-comparison .col-lg-7 {
+  flex: 0 0 58.333333% !important;
+  max-width: 58.333333% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
+/* Columnas de Timeline (3 columnas de 33.3%) */
+.launch-timeline .col-md-4 {
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
 /* --- HERO LANZAMIENTO --- */
 .launch-hero {
   background: linear-gradient(135deg, #f7f5f0 0%, #e8f2f3 50%, #d4ebe8 100%);
@@ -318,27 +371,33 @@
   text-decoration: none !important;
 }
 
-/* --- MEDIA QUERIES RESPONSIVAS --- */
+/* --- MEDIA QUERIES RESPONSIVAS (COLAPSO EN MOBILE Y TABLET) --- */
 @media (max-width: 991px) {
   .launch-hero .row,
   .launch-comparison .row,
   .launch-timeline .row {
     flex-direction: column !important;
   }
-  .launch-hero .col-lg-6,
+  .launch-hero .col-lg-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
   .launch-comparison .col-lg-5,
-  .launch-comparison .col-lg-7,
+  .launch-comparison .col-lg-7 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
   .launch-timeline .col-md-4 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
   }
   .launch-hero {
     padding: 3rem 0;
   }
   .launch-hero h1 {
     font-size: 32px !important;
-  }
-  .launch-timeline .col-md-4 {
-    margin-bottom: 1.5rem;
   }
 }
